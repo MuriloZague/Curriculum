@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fira Code', monospace;
+    background: #010C15;
+    color: #607B96;
+    position: relative;
+}
+
+#content-apresentacao{
+    position: relative;
+    padding-top: 100px;
+    cursor: default;
+}
+
+.dev{
+    font-size: 20px;
+    color: #43D9AD;
+    cursor: default;
+}
+
+.hi {
+    font-size: 18px;
+    color: #e5e9f0;
+}
+
+#apresentacao h1 {
+    font-size: 60px;
+    font-weight: 400;
+    color: #E5E9F0;
+    cursor: default;
+}
+
+.github {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 50px;
+    cursor: default;
+}
+
+.link {
+    color: rgb(148, 83, 244);
+}
+
+.const {
+    color: #4D5BCE;
+}
+
+.github-link, .projeto-link, .contato-link {
+    color: #43D9AD;
+}
+  
+h1 {
+    padding-right: 80px;
+}
+
+img {
+    height: 250px;
+    position: absolute;
+    right: 120%;
+    top: 30%;
+    border-radius: 150px;
+    border-style: ridge;
+    border-color: #43D9AD;
+}
+
+.projetos {
+    display: flex;
+    gap: 15px;
+    padding-top: 50px;
+    flex-direction: column;
+    cursor: default;
+}
+
+.scrsys, .backend {
+    padding-bottom: 10px;
+}
+
+.habilidades {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    padding-top: 50px;
+    flex-direction: column;
+    cursor: default;
+}
+
+.html {
+    position: absolute;
+    height: 30px;
+    left: 0%;
+    top: 0%;
+}
+
+.css {
+    position: absolute;
+    height: 30px;
+    left: 23%;
+    top: 0%;
+}
+
+.python {
+    position: absolute;
+    height: 30px;
+    left: 43.2%;
+    top: 0%;
+}
+
+.estudando {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    padding-top: 25px;
+    flex-direction: column;
+    cursor: default;
+}
+
+.js {
+    position: absolute;
+    height: 30px;
+    left: 0%;
+    top: 0%;
+}
+
+.sql {
+    position: absolute;
+    height: 30px;
+    left: 33%;
+    top: 0%;
+}
+
+.php {
+    position: absolute;
+    height: 30px;
+    left: 55%;
+    top: 0%;
+}
+
+.contatos {
+    display: flex;
+    gap: 15px;
+    padding-top: 50px;
+    flex-direction: column;
+    cursor: default;
+    padding-bottom: 100px;
+}
