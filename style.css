@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,10 @@
 
 a {
     text-decoration: none;
+}
+
+.me {
+    height: 200px;
 }
 
 body {
@@ -15,6 +21,71 @@ body {
     background: #010C15;
     color: #607B96;
     position: relative;
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background-color: #f5f5f5;
+    color: #010C15;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+ 
+.darklight {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.label {
+  background-color: #cfcfcf;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5); 
+}
+  
+.dark .label {
+    background-color: #111;
+}
+
+.ball.dark {
+    background-color: #111;
+}
+  
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+  
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+  
+.fa-moon {
+  color: #f1c40f;
+}
+  
+.fa-sun {
+  color: #f39c12;
 }
 
 #content-apresentacao{
@@ -29,16 +100,28 @@ body {
     cursor: default;
 }
 
+.dev.dark {
+    color: #2d9e7c;
+}
+
 .hi {
-    font-size: 18px;
+    font-size: 19px;
     color: #e5e9f0;
 }
 
-#apresentacao h1 {
+.hi.dark {
+    color: #010C15;
+}
+
+.apresentacao1 {
     font-size: 60px;
     font-weight: 400;
     color: #E5E9F0;
     cursor: default;
+}
+
+.apresentacao1.dark {
+    color: #111;
 }
 
 .github {
@@ -51,19 +134,33 @@ body {
 
 .link {
     color: rgb(148, 83, 244);
+    transition: 400ms;
+}
+
+.link:hover {
+    color: rgba(143, 87, 221, 0.678);
+}
+
+.dark .link {
+    color: rgba(100, 61, 155, 0.897);
 }
 
 .const {
     color: #4D5BCE;
 }
 
-.github-link, .projeto-link, .contato-link {
+.variaveis {
     color: #43D9AD;
 }
-  
+
+.dark .variaveis {
+   color: #2d9e7c;
+}
+
 h1 {
     padding-right: 80px;
 }
+
 
 img {
     height: 250px;
@@ -71,8 +168,18 @@ img {
     right: 120%;
     top: 30%;
     border-radius: 150px;
-    border-style: ridge;
+    border: 2px solid #43D9AD;
     border-color: #43D9AD;
+    transition: 200ms;
+}
+
+img:hover {
+    border: 2px solid #43D9AD;
+    border-radius: 70px;
+}
+
+.dark img{
+    border-color: #147c5d;
 }
 
 .projetos {
@@ -87,6 +194,7 @@ img {
     padding-bottom: 10px;
 }
 
+
 .habilidades {
     position: relative;
     display: flex;
@@ -94,6 +202,23 @@ img {
     padding-top: 50px;
     flex-direction: column;
     cursor: default;
+}
+
+
+.profile-image-light {
+    display: none;
+}
+
+.profile-image-dark {
+    display: block;
+}
+
+.dark .profile-image-light {
+    display: block;
+}
+
+.dark .profile-image-dark {
+    display: none;
 }
 
 .html {
@@ -106,15 +231,21 @@ img {
 .css {
     position: absolute;
     height: 30px;
-    left: 23%;
+    left: 25%;
     top: 0%;
+    transition: 300ms;
 }
 
 .python {
     position: absolute;
     height: 30px;
-    left: 43.2%;
+    left: 47.1%;
     top: 0%;
+    transition: 300ms;
+}
+
+.python:hover, .css:hover, .html:hover, .js:hover, .react:hover, .php:hover {
+    height: 29px;
 }
 
 .estudando {
@@ -131,20 +262,26 @@ img {
     height: 30px;
     left: 0%;
     top: 0%;
+    transition: 300ms;
+
 }
 
-.sql {
+.react {
     position: absolute;
     height: 30px;
-    left: 33%;
+    left: 36.5%;
     top: 0%;
+    transition: 300ms;
+
 }
 
 .php {
     position: absolute;
     height: 30px;
-    left: 55%;
+    left: 60%;
     top: 0%;
+    transition: 300ms;
+
 }
 
 .contatos {
@@ -153,5 +290,52 @@ img {
     padding-top: 50px;
     flex-direction: column;
     cursor: default;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
+}
+
+.siis {
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+    flex-direction: column;
+    cursor: default;
+    padding-bottom: 30px;
+}
+
+.sis {
+    background-color: #010C15;
+    border-radius: 30px;
+    border-color: #43D9AD;
+    border-style: solid;
+    padding: 15px;
+    max-width: 35%;
+    position: absolute;
+    margin-top: 40px;
+    right: 33%;
+    text-align: center;
+    transition: 300ms;
+}
+
+.dark .sis {
+    background-color: white;
+}
+
+.sismestas {
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 300ms;
+    color: rgb(148, 83, 244);
+}
+
+.sismestas:hover {
+    color: rgb(106, 39, 206);
+}
+
+
+.sistemas {
+    font-size: 17px;
+}
+
+.sis:hover {
+    border-radius: 45px;
 }
