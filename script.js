@@ -19,6 +19,7 @@ chk.addEventListener('change', () => {
 
 function applyDarkMode(isDark) {
   const elementsToToggle = [
+    
     document.body,
     document.getElementById('hi'),
     document.getElementById('apresentacao1'),
@@ -29,6 +30,7 @@ function applyDarkMode(isDark) {
     ...document.querySelectorAll('.link'),
     document.querySelector('label'),
     document.getElementById('ball')
+    
   ];
 
   elementsToToggle.forEach(element => {
