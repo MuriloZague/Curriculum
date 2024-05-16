@@ -362,7 +362,7 @@ img:hover {
 }
 
 .apresentacao1 {
-    font-size: 54px;
+    font-size: 45px;
     user-select: none;
 }
 
@@ -423,12 +423,12 @@ p {
 
 .sis {
     max-width: 100%;
-    width: 350px;
+    width: 330px;
     position: inherit;
     margin-top: 8px;
     font-size: 15px;
     justify-content: center;
-    padding: 10px;
+    padding: 13px;
     user-select: none;
 }
 
@@ -437,7 +437,7 @@ p {
 }
 
 .sismestas {
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .sistemas {
