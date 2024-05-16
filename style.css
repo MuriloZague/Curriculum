@@ -359,10 +359,12 @@ img:hover {
 
 .hi {
     font-size: 17px;
+    user-select: none;
 }
 
 .apresentacao1 {
-    font-size: 55px;
+    font-size: 54px;
+    user-select: none;
 }
 
 .checkbox {
@@ -422,12 +424,13 @@ p {
 
 .sis {
     max-width: 100%;
-    width: 320px;
+    width: 350px;
     position: inherit;
     margin-top: 8px;
     font-size: 15px;
-    margin-left: 2%;
+    justify-content: center;
     padding: 10px;
+    user-select: none;
 }
 
 .sis:active {
