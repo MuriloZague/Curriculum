@@ -346,8 +346,7 @@ img:hover {
 
 
 @media (width <= 576px) {
-
-
+    
 .me {
     display: none; 
 }
@@ -443,6 +442,4 @@ p {
 
 .sistemas {
     font-size: 13.5px;
-}
-
-}
+}}
