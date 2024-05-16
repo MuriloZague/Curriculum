@@ -51,8 +51,8 @@ body.dark {
   border: 0;
   padding: 5px;
   position: relative;
-  height: 26px;
-  width: 50px;
+  height: 20px;
+  width: 45px;
   transform: scale(1.5); 
 }
   
@@ -68,16 +68,16 @@ body.dark {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 2px;
   left: 2px;
-  height: 22px;
-  width: 22px;
+  margin: 2px;
+  height: 16px;
+  width: 16px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
 }
   
 .checkbox:checked + .label .ball {
-  transform: translateX(24px);
+  transform: translateX(20px);
 }
   
 .fa-moon {
@@ -86,6 +86,10 @@ body.dark {
   
 .fa-sun {
   color: #f39c12;
+}
+
+.fa-moon, .fa-sun {
+    font-size: 14px;
 }
 
 #content-apresentacao{
@@ -338,4 +342,104 @@ img:hover {
 
 .sis:hover {
     border-radius: 45px;
+}
+
+
+@media (width <= 576px) {
+
+
+.me {
+    display: none; 
+}
+
+#content-apresentacao{
+    position: relative;
+    text-align: center;
+}
+
+.hi {
+    font-size: 17px;
+}
+
+.apresentacao1 {
+    font-size: 55px;
+}
+
+.checkbox {
+    top: -40px;
+    right: 1px;
+    padding: 10px;
+    z-index: 1;
+    width: 60px;
+    height: 30px;
+}
+
+.label {
+    top: -35px;
+    right: 9px;
+}
+
+.github {
+    padding-top: 30px;
+    font-size: 13.5px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.projetos {
+    padding-left: 5%;
+    font-size: 13.4px;
+    padding-top: 60px;
+}
+
+.habilidades {
+    padding-top: 60px;
+    
+}
+
+.html, .python, .css {
+    height: 26px;
+    margin-left: 12%;
+}
+
+.estudando {
+    padding-top: 20px;
+}
+
+.js, .react, .php {
+    height: 26px;
+    margin-left: 10%;
+}
+
+.contatos {
+    padding-top: 60px;
+    font-size: 13.4px;
+    padding-left: 5%;
+}
+
+.sis {
+    max-width: 100%;
+    width: 320px;
+    position: inherit;
+    margin-top: 8px;
+    font-size: 15px;
+    margin-left: 2%;
+    padding: 10px;
+}
+
+.sis:active {
+    transform: scale(0.97);
+}
+
+.sismestas {
+    font-size: 25px;
+}
+
+.sistemas {
+    font-size: 13.5px;
+}
+
 }
