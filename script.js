@@ -22,6 +22,7 @@ function applyDarkMode(isDark) {
     
     document.body,
     document.getElementById('hi'),
+    document.getElementById('hi1'),
     document.getElementById('apresentacao1'),
     document.getElementById('dev'),
     document.querySelector('img'),

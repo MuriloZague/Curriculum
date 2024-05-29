@@ -14,6 +14,7 @@ a {
 }
 
 body {
+    font-size: 16.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +27,7 @@ body {
 
 body.dark {
     background-color: #f5f5f5;
-    color: #010C15;
+    color: #4b4b4b;
 }
 
 .checkbox {
@@ -51,7 +52,7 @@ body.dark {
   border: 0;
   padding: 5px;
   position: relative;
-  height: 20px;
+  height: 21px;
   width: 45px;
   transform: scale(1.5); 
 }
@@ -94,7 +95,7 @@ body.dark {
 
 #content-apresentacao{
     position: relative;
-    padding-top: 100px;
+    padding-top: 70px;
     cursor: default;
 }
 
@@ -129,6 +130,14 @@ body.dark {
 }
 
 .github {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px;
+    cursor: default;
+}
+
+.about {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -170,7 +179,7 @@ img {
     height: 250px;
     position: absolute;
     right: 120%;
-    top: 30%;
+    top: 10%;
     border-radius: 150px;
     border: 2px solid #43D9AD;
     border-color: #43D9AD;
@@ -264,16 +273,15 @@ img:hover {
 .js {
     position: absolute;
     height: 30px;
-    left: 0%;
+    left: 75.6%;
     top: 0%;
     transition: 300ms;
-
 }
 
 .react {
     position: absolute;
     height: 30px;
-    left: 36.5%;
+    left: 0%;
     top: 0%;
     transition: 300ms;
 
@@ -282,7 +290,7 @@ img:hover {
 .php {
     position: absolute;
     height: 30px;
-    left: 60%;
+    left: 24%;
     top: 0%;
     transition: 300ms;
 
@@ -298,7 +306,6 @@ img:hover {
 }
 
 .siis {
-    display: flex;
     gap: 15px;
     padding-top: 20px;
     flex-direction: column;
@@ -308,13 +315,10 @@ img:hover {
 
 .sis {
     background-color: #010C15;
-    border-radius: 30px;
-    border-color: #43D9AD;
-    border-style: solid;
     padding: 15px;
     max-width: 35%;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 20px;
     right: 33%;
     text-align: center;
     transition: 300ms;
@@ -325,8 +329,8 @@ img:hover {
 }
 
 .sismestas {
-    font-size: 25px;
-    font-weight: bolder;
+    font-size: 22.5px;
+    font-weight: bold;
     transition: 300ms;
     color: rgb(148, 83, 244);
 }
@@ -334,7 +338,6 @@ img:hover {
 .sismestas:hover {
     color: rgb(106, 39, 206);
 }
-
 
 .sistemas {
     font-size: 17px;
@@ -346,6 +349,47 @@ img:hover {
 
 
 @media (width <= 576px) {
+
+.siis {
+    max-width: 100%;
+}
+
+.dev {
+    margin-bottom: 10px;
+}
+
+.about {
+    margin-top: 25px;
+}
+
+
+
+.darklight {
+    top: 4%;
+}
+
+.label {
+    height: 15px;
+    width: 30px;
+}
+
+.fa-sun {
+    font-size: 8px;
+}
+
+.fa-moon {
+    font-size: 8px;
+}
+
+.label .ball {
+    left: 0.5px;
+    width: 11px;
+    height: 11px;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(14px);
+  }
     
 .me {
     display: none; 
@@ -392,13 +436,26 @@ p {
 
 .projetos {
     padding-left: 5%;
-    font-size: 13.4px;
+    font-size: 14px;
     padding-top: 60px;
 }
 
 .habilidades {
     padding-top: 60px;
-    
+    margin-bottom: 18px;
+}
+
+.js {
+    top: 45%;
+    left: 25%;
+}
+
+.react {
+    left: 20%;
+}
+
+.php {
+    left: 43%;
 }
 
 .html, .python, .css {
@@ -407,7 +464,7 @@ p {
 }
 
 .estudando {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .js, .react, .php {
@@ -417,13 +474,14 @@ p {
 
 .contatos {
     padding-top: 60px;
-    font-size: 13.4px;
+
+    font-size: 14px;
     padding-left: 5%;
 }
 
 .sis {
-    max-width: 100%;
-    width: 330px;
+    max-width: 91%;
+    width: 100%;
     position: inherit;
     margin-top: 8px;
     font-size: 15px;
@@ -437,7 +495,7 @@ p {
 }
 
 .sismestas {
-    font-size: 23px;
+    font-size: 17px;
 }
 
 .sistemas {
