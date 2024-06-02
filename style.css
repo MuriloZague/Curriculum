@@ -362,8 +362,6 @@ img:hover {
     margin-top: 20px;
 }
 
-
-
 .darklight {
     top: 4%;
 }
@@ -401,7 +399,7 @@ img:hover {
 }
 
 .hi {
-    font-size: 17px;
+    font-size: 15px;
     user-select: none;
 }
 
@@ -435,7 +433,7 @@ p {
 }
 
 .projetos {
-    padding-left: 5%;
+    align-items: center;
     font-size: 14px;
     padding-top: 60px;
 }
@@ -474,12 +472,13 @@ p {
 
 .contatos {
     padding-top: 60px;
-
+    align-items: center;
     font-size: 14px;
-    padding-left: 5%;
+    
 }
 
 .sis {
+    align-items: center;
     max-width: 91%;
     width: 100%;
     position: inherit;
